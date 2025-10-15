@@ -1,165 +1,165 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="my_robot">
 
-    <xacro:property name="d1" value="0.1602" /> 
+    <xacro:property name="d1" value="0.1602" />
     <xacro:property name="a1" value="0.0812" />
     <xacro:property name="alpha1" value="${-pi/2}" />
     <xacro:property name="d2" value="0.0" />
-    <xacro:property name="a2" value="0.2941" /> 
+    <xacro:property name="a2" value="0.2941" />
     <xacro:property name="alpha2" value="0.0" />
-
     <xacro:property name="d3" value="0.0" />
     <xacro:property name="a3" value="0.0" />
     <xacro:property name="alpha3" value="${pi/2}" />
-
     <xacro:property name="d4" value="0.217" />
     <xacro:property name="a4" value="0.0" />
     <xacro:property name="alpha4" value="${-pi/2}" />
-
     <xacro:property name="d5" value="0.0" />
     <xacro:property name="a5" value="0.0" />
     <xacro:property name="alpha5" value="${pi/2}" />
-
     <xacro:property name="d6" value="0.025" />
     <xacro:property name="a6" value="0.0" />
     <xacro:property name="alpha6" value="0.0" />
 
-
     <link name="base_link">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/base_link.stl"/>
             </geometry>
             <material name="grey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/base_link.stl"/>
             </geometry>
         </collision>
     </link>
 
-    <link name="Link_1">
+    <link name="link_1">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/link_1.stl"/>
             </geometry>
             <material name="blue"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_1.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/link_1.stl"/>
             </geometry>
         </collision>
     </link>
 
-    <link name="Link_2">
+    <link name="link_2">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/link_2.stl"/>
             </geometry>
             <material name="grey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/link_2.stl"/>
             </geometry>
         </collision>
     </link>
 
-    <link name="Link_3">
+    <link name="link_3">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/link_3.stl"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://my_robot_description/meshes/link_3.stl"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="link_4">
+        <visual>
+            <geometry>
+                <mesh filename="package://my_robot_description/meshes/link_4.stl"/>
             </geometry>
             <material name="grey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/link_4.stl"/>
             </geometry>
         </collision>
     </link>
 
-    <link name="Link_4">
+    <link name="link_5">
         <visual>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/link_5.stl"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <geometry>
+                <mesh filename="package://my_robot_description/meshes/link_5.stl"/>
+            </geometry>
+        </collision>
+    </link>
+
+    <link name="link_6">
+        <visual>
+            <geometry>
+                <mesh filename="package://my_robot_description/meshes/link_6.stl"/>
             </geometry>
             <material name="grey"/>
         </visual>
         <collision>
             <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="Link_5">
-        <visual>
-            <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
-            </geometry>
-            <material name="grey"/>
-        </visual>
-        <collision>
-            <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
-            </geometry>
-        </collision>
-    </link>
-
-    <link name="Link_6">
-        <visual>
-            <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
-            </geometry>
-            <material name="grey"/>
-        </visual>
-        <collision>
-            <geometry>
-                <mesh filename="package://my_robot_description/meshes/link_2.stl" scale="0.001 0.001 0.001"/>
+                <mesh filename="package://my_robot_description/meshes/link_6.stl"/>
             </geometry>
         </collision>
     </link>
 
     <joint name="joint_1" type="revolute">
-        <parent link="Base_link"/>
-        <child link="Link_1"/>
+        <parent link="base_link"/> <child link="link_1"/>
         <origin xyz="0 0 ${d1}" rpy="0 0 0"/>
         <axis xyz="0 0 1"/>
         <limit lower="${-pi}" upper="${pi}" effort="100" velocity="1.0"/>
     </joint>
 
     <joint name="joint_2" type="revolute">
-        <parent link="Link_1"/>
-        <child link="Link_2"/>
+        <parent link="link_1"/>
+        <child link="link_2"/>
         <origin xyz="${a1} 0 0" rpy="${alpha1} 0 0"/>
         <axis xyz="0 0 1"/>
         <limit lower="${-pi/2}" upper="${pi/2}" effort="100" velocity="1.0"/>
     </joint>
 
     <joint name="joint_3" type="revolute">
-        <parent link="Link_2"/>
-        <child link="Link_3"/>
+        <parent link="link_2"/>
+        <child link="link_3"/>
         <origin xyz="${a2} 0 ${d3}" rpy="${alpha2} 0 0"/>
         <axis xyz="0 0 1"/>
         <limit lower="${-pi}" upper="${pi}" effort="100" velocity="1.0"/>
     </joint>
 
     <joint name="joint_4" type="revolute">
-        <parent link="Link_3"/>
-        <child link="Link_4"/>
+        <parent link="link_3"/>
+        <child link="link_4"/>
         <origin xyz="${a3} 0 ${d4}" rpy="${alpha3} 0 0"/>
         <axis xyz="0 0 1"/>
         <limit lower="${-pi}" upper="${pi}" effort="100" velocity="1.0"/>
     </joint>
 
     <joint name="joint_5" type="revolute">
-        <parent link="Link_4"/>
-        <child link="Link_5"/>
-        <origin xyz="${a3} 0 ${d4}" rpy="${alpha3} 0 0"/>
-        <axis xyz="0 0 1"/>
+        <parent link="link_4"/>
+        <child link="link_5"/>
+        <origin xyz="${a4} 0 ${d5}" rpy="${alpha4} 0 0"/> <axis xyz="0 0 1"/>
+        <limit lower="${-pi}" upper="${pi}" effort="100" velocity="1.0"/>
+    </joint>
+
+    <joint name="joint_6" type="revolute">
+        <parent link="link_5"/>
+        <child link="link_6"/>
+        <origin xyz="${a5} 0 ${d6}" rpy="${alpha5} 0 0"/> <axis xyz="0 0 1"/>
         <limit lower="${-pi}" upper="${pi}" effort="100" velocity="1.0"/>
     </joint>
 
